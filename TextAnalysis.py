@@ -22,16 +22,16 @@ def text_processor(superman):
     replist2 = []
     totstr = ""
     for elm3 in wonder:
-        repstr = str(wonder[elm3]/100) + ": " + elm3
+        repstr = str(wonder[elm3]/10) + ": " + elm3
         replist2.append(repstr)
     replist2.sort(reverse = True)
     for e in replist2:
-        valstr = e[:4]
+        valstr = e[:3]
         vala = float(valstr)
-        valb = vala * 100
+        valb = vala * 10
         val = int(valb)
         for ex in range(val):
-            astr = e[6:]
+            astr = e[5:]
             totstr += astr + " "
     return totstr
 
