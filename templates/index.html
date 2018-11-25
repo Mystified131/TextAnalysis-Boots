@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <body>
+            <div align=center>
+            <div id=box>
+                    <br><br>
+            <h1 align = "center">Text Analysis</h1>
+            <h4 align = "center"><em>By Thomas Park</em></h4>
+            <p align = "center">We are used to reading text from left to right, capturing its narratives and its linear meanings.</p> 
+            <p align = "center">This analytic tool helps you to look at text in a new way, through a process of listing words according to usage and reordering.</p>
+            <p align = "center">Try text by different writers, and see if you can use the tool to pick up on stylistic and thematic differences.</p>
+            <p align = "center">I find it helps to ignore the flood of articles and short words that come out first.</p>
+            <form action = "/" method = "post" align = "center">
+            <h2 align = "center">Please input text for processing:</h2>
+            <br>
+            <textarea name = "text" rows = "5" cols = "100" align = "center"></textarea>
+            <br><br>
+            <input type="submit" align = "center" />
+            </form>
+            <br><br>
+            <h3 align = "center">The result is:</h3>
+            <p align = "center">{{result}}</p>
+            <br>
+            </div>
+
+    {% endblock %}
